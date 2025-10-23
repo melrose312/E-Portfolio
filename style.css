@@ -207,6 +207,15 @@ PROJECTS
 
 .project__img {
   width: 100%;
+  transition: all 600ms ease;
+}
+
+.project__list {
+  display: flex;
+  flex-direction: column;    
+  gap: 80px;          
+  padding: 0;
+  list-style: none;
 }
 
 .project__wrapper {
@@ -239,6 +248,7 @@ PROJECTS
 
 .project__wrapper:hover .project__wrapper--bg {
   opacity: 0.7;
+  visibility: visible;
 }
 
 .project__wrapper--bg {
