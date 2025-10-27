@@ -32,7 +32,7 @@
           />
         </figure>
         <ul class="nav__link--list">
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor
@@ -43,14 +43,14 @@
           </li>
           <li class="nav__link">
             <a
-              href="#"
+              href="#projects"
               class="nav__link--anchor 
               link__hover-effect 
               link__hover-effect--black"
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor 
@@ -59,7 +59,7 @@
               >Contact</a
             >
           </li>
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleContrast()">
             <a
               href="#"
               class="nav__link--anchor
@@ -79,7 +79,7 @@
             customer service, focused on creating clear, user-friendly web
             experiences.
             <br />
-            Here's a bit more <b class="purple">about me.</b>
+            Here's a bit more <b class="purple click" onclick="toggleModal()">about me.</b>
           </p>
           <div class="social__list">
             <a
@@ -106,9 +106,11 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      
+      <button class="mail__btn click" onclick="toggleModal()">
             <i class="fa-solid fa-envelope"></i>
         </button>
+        
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
@@ -141,6 +143,7 @@
                 </div>
             </div>
             <div class="modal__half modal__contact">
+                <i class="fa-solid fa-circle-xmark modal__exit click" onclick="toggleModal()"></i>
                 <h3 class="modal__title modal__title--contact">
                     Let's have a chat!
                 </h3>
@@ -168,7 +171,7 @@
                 <div class="modal__overlay modal__overlay--success">
                     Thanks! Looking forward to speaking with you soon.
                 </div>
-                <i class="fa-solid fa-circle-xmark modal__exit click"></i>
+                
             </div>
         </div>
     </section>
@@ -277,21 +280,21 @@
                 ">
               GitHub 
             </a>
-                <a href="#" class="
+                <a href="#" target class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white
                 ">
               LinkedIn 
             </a>
-                <a href="#" class="
+                <a href="#" onclick="toggleModal()" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white
                 ">
               Contact 
             </a>
-                <a href="#" class="
+                <a href="./assets/Melody_Gonzales.pdf" target="_blank" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white
